@@ -26,11 +26,11 @@ public class Ativ {
             while ((linha = reader.readLine()) != null) {
                 String[] dados = linha.split(",");
                 if (dados.length == 3) {
-                    String nomeItem = dados[0].trim();
+                    String item = dados[0].trim();
                     double preco = Double.parseDouble(dados[1].trim());
                     int quantidade = Integer.parseInt(dados[2].trim());
-                    double valorTotal = preco * quantidade;
-                    writer.write(String.format("%s,%.2f\n", nomeItem, valorTotal));
+                    double total = preco * quantidade;
+                    writer.write(String.format("%s,%.2f\n", item, total));
                 }
             }
             System.out.println("Resumo gerado com sucesso em: " + out.getAbsolutePath());
