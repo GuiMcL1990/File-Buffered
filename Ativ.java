@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Ativ {
     public static void main(String[] args) {
-        String caminhoA = "C:\\Users\\Carlos\\Documents";  // Não consegui fazer rodar,
+        String caminhoA = "C:\\Users\\Guilherme\\Documents";  // Não consegui fazer rodar,
         Resumo(caminhoA);
     }
     public static void Resumo(String caminhoB) {
